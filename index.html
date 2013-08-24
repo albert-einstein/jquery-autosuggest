@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>test autoSuggest</title>
+	</head>
+	<script type="application/javascript" src="jquery-1.9.1.min.js"></script>
+	<script type="application/javascript" src="jquery.autoSuggest.1.7.0.js"></script>
+	<link rel="stylesheet" href="jquery.autoSuggest.css" type="text/css" />
+	<body>
+		<input id="auto-suggest" />
+	</body>
+	<script type="application/javascript">
+		var data = [{
+			id : "ID1",
+			value : "Quảng Ninh",
+			name : "Tỉnh Quảng Ninh"
+		}, {
+			id : "ID2",
+			value : "Hà Nội",
+			name : "Thành Phố Hà Nội"
+		}, {
+			id : "ID3",
+			value : "Hải Phòng",
+			name : "Thành Phố Hải Phòng"
+		}, {
+			id : "ID4",
+			value : "Hồ Chí Minh",
+			name : "Thành Phố Hồ Chí Minh"
+		}, {
+			id : "ID5",
+			value : "Đà Nẵng",
+			name : "Thành Phố Đà Nẵng"
+		}, {
+			id : "ID2",
+			value : "Hải Dương",
+			name : "Tỉnh Hải Dương"
+		}];
+		$("#auto-suggest").autoSuggest(data);
+	</script>
+</html>
